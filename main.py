@@ -142,7 +142,7 @@ rightArrow = Button(540, screenHeight / 2, rightArrow, 0.3)
 ##########################################################################################
 # Created a button (techincally just an image object) which includes a way to scale the image using a class named "imageScale" and this object also includes a way to draw it with the method within Button class named "draw()"
 dialogButtonImageObject = Button(1, 1, dialogButtonImageObject, 0.05)
-dialogImageObject = Button(100, screenHeight / 8, dialogImageObject, 0.9)
+dialogImageObject = Button(100, screenHeight / 8, dialogImageObject, 1.6)
 ##########################################################################################
 
 leverOn = imageScaling(310, 175, leverOn, 0.03)
@@ -293,7 +293,7 @@ while run:
 
             ##########################################################################################
             # Similar to the left arrow created a rectangle that (a reference to space within the screen), so that we can compare later the mouse click (x,y) corrdiantes and see if it matches anywhere near the button rectangle. Found these rectangle values by putting a print statment in the method called "draw()" within the Button.class, which our dialog button uses to be created, so it will be called and a break point will be hit. When it is hit on the left hand side I can see all the values for every button created and the info of each button like there dimensions. This is how I got the info.
-            dialogButtonRect = pygame.Rect(240, 200, 64, 36)
+            dialogButtonRect = pygame.Rect(1, 1, 64, 36)
             ##########################################################################################
             if leftArrowRect.collidepoint(x, y) or rightArrowRect.collidepoint(
                     x, y):
